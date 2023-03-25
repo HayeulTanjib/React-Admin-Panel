@@ -8,6 +8,7 @@ import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalance
 
 const Widget = ({type}) => {
 
+    //temp data
     let data;
     const amount = 100;
     const diff = 50;
@@ -18,15 +19,15 @@ const Widget = ({type}) => {
                 title: "USERS",
                 isMoney: false,
                 link: "See all users",
-                icon: <PersonOutlineOutlinedIcon className='icon' style={{color: 'crimson', backgroundColor: ""}}/>
+                icon: <PersonOutlineOutlinedIcon className='icon' style={{color: 'crimson'}}/>
             }
             break;
         case "order":
             data = {
                 title: "ORDERS",
-                isMoney: true,
+                isMoney: false,
                 link: "View all oders",
-                icon: <ShoppingCartOutlinedIcon className='icon' style={{color: 'crimson', backgroundColor: ""}}/>
+                icon: <ShoppingCartOutlinedIcon className='icon' style={{color: 'yellow', backgroundColor: ""}}/>
             }
             break;
         case "earning":
@@ -34,7 +35,7 @@ const Widget = ({type}) => {
                 title: "EARNING",
                 isMoney: true,
                 link: "View net earnings",
-                icon: <AttachMoneyOutlinedIcon className='icon' style={{color: 'crimson', backgroundColor: ""}}/>
+                icon: <AttachMoneyOutlinedIcon className='icon' style={{color: 'green', backgroundColor: ""}}/>
             }
             break;
         case "balance":
@@ -42,7 +43,7 @@ const Widget = ({type}) => {
                 title: "BALANCE",
                 isMoney: true,
                 link: "See details",
-                icon: <AccountBalanceWalletOutlinedIcon className='icon' style={{color: 'crimson', backgroundColor: ""}}/>
+                icon: <AccountBalanceWalletOutlinedIcon className='icon' style={{color: 'purple', backgroundColor: ""}}/>
             }
             break;
     
